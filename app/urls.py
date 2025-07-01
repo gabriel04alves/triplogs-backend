@@ -12,7 +12,7 @@ from core.views import UserViewSet, TripViewSet
 
 router = DefaultRouter()
 
-# router.register(r'usuarios', UserViewSet, basename='usuarios')
+router.register(r'usuarios', UserViewSet, basename='usuarios')
 router.register(r'trips', TripViewSet, basename='trips')
 
 urlpatterns = [
