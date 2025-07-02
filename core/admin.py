@@ -16,7 +16,7 @@ class UserAdmin(BaseUserAdmin):
     list_display = ['email', 'name']
     fieldsets = (
         (None, {'fields': ('email', 'password')}),
-        (_('Personal Info'), {'fields': ('name', 'passage_id')}),
+        (_('Personal Info'), {'fields': ('name',)}),
         (
             _('Permissions'),
             {
@@ -52,3 +52,22 @@ class UserAdmin(BaseUserAdmin):
 
 
 admin.site.register(models.User, UserAdmin)
+
+
+class TripAdmin(admin.ModelAdmin):
+    """Define the admin pages for trips."""
+    
+    list_display = ['title', 'location', 'trip_date', 'user', 'created_at']
+    list_filter = ['trip_date', 'created_at', 'location']
+    search_fields = ['title', 'location', 'description']
+    ordering = ['-created_at']
+    readonly_fields = ['created_at']
+    
+    fieldsets = (
+        (None, {'fields': ('user', 'title', 'location', 'trip_date')}),
+        (_('Content'), {'fields': ('description', 'photo')}),
+        (_('Metadata'), {'fields': ('created_at',)}),
+    )
+
+
+admin.site.register(models.Trip, TripAdmin)
