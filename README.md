@@ -1,6 +1,6 @@
 # TripLogs Backend
 
-Uma API REST robusta e moderna para registro e gerenciamento de viagens, desenvolvida na disciplina **Fundamentos de DevOps** no curso de **Bacharelado em Sistemas de Informação**.
+Uma API REST para registro e gerenciamento de viagens, desenvolvida na disciplina **Fundamentos de DevOps** no curso de **Bacharelado em Sistemas de Informação**.
 
 ## Sobre o Projeto
 
