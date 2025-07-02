@@ -37,8 +37,7 @@ class Trip(models.Model):
         verbose_name=_('description'), 
         help_text=_('Additional details or notes about the trip.')
     )
-    photo = models.ImageField(
-        upload_to='trips/', 
+    photo = models.TextField(
         blank=True, 
         null=True, 
         verbose_name=_('photo'), 

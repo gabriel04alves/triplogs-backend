@@ -10,6 +10,8 @@ from rest_framework_simplejwt.views import TokenRefreshView
 
 from core.views import UserViewSet, TripViewSet
 from core.views.token import CustomTokenObtainPairView
+from django.conf import settings
+from django.conf.urls.static import static
 
 router = DefaultRouter()
 
@@ -39,3 +41,5 @@ urlpatterns = [
     # API
     path('api/', include(router.urls)),
 ]
+
+urlpatterns += static(settings.MEDIA_ENDPOINT, document_root=settings.MEDIA_ROOT)
