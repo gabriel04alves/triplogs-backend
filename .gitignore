@@ -1,6 +1,12 @@
 # Created by https://www.toptal.com/developers/gitignore/api/python
 # Edit at https://www.toptal.com/developers/gitignore?templates=python
 
+*.jgp
+*.png
+*.jpeg
+*.sqlite3
+/static
+
 ### Python ###
 # Byte-compiled / optimized / DLL files
 __pycache__/
