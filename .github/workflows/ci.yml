@@ -23,4 +23,4 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: gabriel04alves/triplogs-back:${{ github.sha }}
+          tags: gabriel04alves/triplogs-backend:${{ github.sha }}
