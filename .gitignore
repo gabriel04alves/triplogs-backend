@@ -5,6 +5,7 @@
 *.png
 *.jpeg
 *.sqlite3
+/static
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
