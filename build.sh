@@ -19,7 +19,7 @@ python manage.py migrate --noinput
 
 # Inicia o servidor Gunicorn
 echo "Iniciando servidor Gunicorn..."
-gunicorn --bind 0.0.0.0:8000 --workers ${WEB_CONCURRENCY:-4} app.wsgi:application
+gunicorn --bind 0.0.0.0:3000 --workers ${WEB_CONCURRENCY:-4} app.wsgi:application
 
 # Para buildar a imagem Docker:
 # docker build -t triplogs-backend .

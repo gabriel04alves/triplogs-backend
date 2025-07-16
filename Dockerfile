@@ -18,7 +18,7 @@ RUN pip install --upgrade pip && \
 COPY . .
 
 # Expõe a porta padrão do Django
-EXPOSE 8000
+EXPOSE 3000
 
 # Comando padrão para rodar o build.sh
 CMD ["./build.sh"]
